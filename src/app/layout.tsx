@@ -1,5 +1,5 @@
 import Footer from "@/app/_components/footer";
-import { GoogleAnalytics } from '@next/third-parties/google';
+import { GoogleTagManager } from '@next/third-parties/google';
 import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -60,7 +60,7 @@ export default function RootLayout({
         <div className="min-h-screen">{children}</div>
         <Footer />
       </body>
-      <GoogleAnalytics gaId="GTM-NWC9ZK7D" />
+      <GoogleTagManager gtmId="GTM-NWC9ZK7D" />
     </html>
   );
 }
