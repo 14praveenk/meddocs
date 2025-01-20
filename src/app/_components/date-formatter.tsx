@@ -5,8 +5,6 @@ interface Props {
 }
 
 const DateFormatter = ({ dateString }: Props) => {
-  console.log(dateString);
-
   let date: Date;
 
   if (typeof dateString === "string") {
