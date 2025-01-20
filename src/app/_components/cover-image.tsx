@@ -13,6 +13,7 @@ const CoverImage = ({ title, src, slug, pdflink }: Props) => {
   const image = (
     <Image
       src={src}
+      id={`${title}`} 
       alt={`Cover Image for ${title}`}
       className={cn("shadow-sm w-full", {
         "hover:shadow-lg transition-shadow duration-200": slug,
